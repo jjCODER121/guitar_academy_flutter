@@ -1,0 +1,11 @@
+{
+  "name": "guitar-school-supabase-tests",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node migration.test.mjs && node --test ../functions/_shared/activation.test.ts"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "^0.5.8"
+  }
+}

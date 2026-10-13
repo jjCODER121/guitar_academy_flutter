@@ -1,0 +1,24 @@
+# Запуск сервера: docker compose up --build
+#   Админка: http://localhost:8088/admin
+#   API:     http://localhost:8088/api/v1/health
+#
+# Перед первым запуском создайте файл .env рядом (см. .env.example):
+# ADMIN_PASSWORD и MEDIA_SECRET обязательно свои.
+
+services:
+  server:
+    build:
+      context: .
+      dockerfile: server/Dockerfile
+    env_file: .env
+    environment:
+      RUST_LOG: info,tower_http=info,sqlx=warn
+    ports:
+      - "8088:8080"
+    volumes:
+      # База и все загруженные файлы — держите копии этой папки.
+      - school-data:/data
+    restart: unless-stopped
+
+volumes:
+  school-data:

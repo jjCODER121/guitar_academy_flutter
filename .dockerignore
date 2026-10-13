@@ -1,0 +1,7 @@
+**/target
+**/.dart_tool
+**/build
+app
+.git
+.env
+**/.env

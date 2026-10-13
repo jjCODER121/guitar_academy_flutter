@@ -1,0 +1,27 @@
+# Секреты и локальные настройки
+.env
+*.local
+
+# Rust
+/server/target/
+# Локальная база и загруженные файлы
+/server/data/
+/content/
+
+# Flutter / Dart
+/app/.dart_tool/
+/app/build/
+/app/.flutter-plugins-dependencies
+/app/*.iml
+/app/.idea/
+.dart_tool/
+
+# IDE / ОС
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Node
+node_modules/

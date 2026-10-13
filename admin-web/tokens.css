@@ -1,0 +1,60 @@
+/* GENERATED CODE — DO NOT EDIT.
+   Source: design/tokens.json. Regenerate: dart run tools/gen_tokens.dart */
+
+/* Админка по умолчанию светлая (как в макетах), тёмная — data-theme="dark". */
+:root {
+  --font-family: 'Manrope', 'InterTajik', 'Inter', system-ui, sans-serif;
+  --font-screen-title: 700 28px/1.2 var(--font-family);
+  --tracking-screen-title: -0.5px;
+  --font-album-title: 700 22px/1.25 var(--font-family);
+  --tracking-album-title: -0.3px;
+  --font-section-title: 700 20px/1.25 var(--font-family);
+  --tracking-section-title: 0px;
+  --font-lesson-title: 600 16px/1.3 var(--font-family);
+  --tracking-lesson-title: 0px;
+  --font-body: 500 16px/1.4 var(--font-family);
+  --tracking-body: 0px;
+  --font-button: 700 17px/1.2 var(--font-family);
+  --tracking-button: 0px;
+  --font-caption: 500 13px/1.35 var(--font-family);
+  --tracking-caption: 0px;
+  --font-nav-label: 600 11px/1.2 var(--font-family);
+  --tracking-nav-label: 0px;
+  --space-xs: 8px;
+  --space-sm: 16px;
+  --space-md: 24px;
+  --space-lg: 32px;
+  --space-screen: 20px;
+  --radius-card: 20px;
+  --radius-button: 16px;
+  --radius-cover: 12px;
+  --size-tap-target: 48px;
+  --size-button: 56px;
+  --size-icon: 24px;
+  --size-icon-stroke: 2px;
+  --color-background: #FAF8F5;
+  --color-surface: #FFFFFF;
+  --color-surface-alt: #F1EDE7;
+  --color-border: #E7E1D8;
+  --color-text-primary: #1A1714;
+  --color-text-secondary: #6E675E;
+  --color-accent: #C9822A;
+  --color-accent-on: #1A1206;
+  --color-success: #3E8E43;
+  --color-danger: #9A3B1F;
+  --color-locked: #B5ADA3;
+}
+
+[data-theme="dark"] {
+  --color-background: #0F0E0D;
+  --color-surface: #1B1917;
+  --color-surface-alt: #262320;
+  --color-border: #3A3631;
+  --color-text-primary: #F5F1EA;
+  --color-text-secondary: #9A948B;
+  --color-accent: #E0A040;
+  --color-accent-on: #1A1206;
+  --color-success: #6FBF73;
+  --color-danger: #E8846A;
+  --color-locked: #5C5650;
+}

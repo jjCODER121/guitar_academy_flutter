@@ -1,0 +1,7 @@
+# Заголовки безопасности для Cloudflare Pages.
+/*
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: no-referrer
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+  Content-Security-Policy: default-src 'self'; script-src 'self' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https://aqihlmikvzdfiutmuwdd.supabase.co; connect-src 'self' https://aqihlmikvzdfiutmuwdd.supabase.co wss://aqihlmikvzdfiutmuwdd.supabase.co https://*.r2.cloudflarestorage.com https://cdn.jsdelivr.net; media-src https://*.r2.cloudflarestorage.com; frame-ancestors 'none'; base-uri 'none'; form-action 'self'
